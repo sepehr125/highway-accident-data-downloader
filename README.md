@@ -19,6 +19,5 @@ ftp://ftp.nhtsa.dot.gov/fars/FileList.pdf
 ---------------
 ## TO DO:
 - Standardize data, at least for the past decade, and place into a database. Make use of native datetime and lat/long fields to make analysis easier. 
-- Make foreign key field for each accident unique across all years. Currently, the ST_CASE field is only unique to each year!
-- Map codes for identifying states, etc. to actual state abbreviations. Generally give fields more readily understandable names, with reversible mapping, of course.
-- 
+- Make foreign key field for each accident unique across all years. Currently, the ST_CASE field is only unique to each year.
+- Map codes for identifying states to actual state abbreviations. 
