@@ -213,10 +213,9 @@ if __name__ == '__main__':
     # make dir structure and save paths to variables
     zipped_dir, unzipped_dir, csv_dir = create_dir_structure()
 
-    # download files to zipped_dir
-    years = [2013, 2014]
-    # years = range(1975, 2015) # if you want all the years
-    get_fars_files(zipped_dir, years=years)
+    # get the past 10 years of data
+    get_fars_files(zipped_dir, years=range(2004-2015))
+
 
     # unzip files to unzipped_dir
     unzip_fars_files(zipped_dir, unzipped_dir)
